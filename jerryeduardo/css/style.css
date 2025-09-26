@@ -1,0 +1,888 @@
+/* Global */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body, button{
+    font-family: 'Mulish', sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+
+.border-radius3{
+    border-radius: 3px;
+}
+
+.border-radius25{
+    border-radius: 25px;
+}
+
+.border-radius50{
+    border-radius: 50px;
+}
+
+.font-16{
+    font-size: 16px;
+}
+
+.transition-3{
+    transition: 0.3s;
+}
+
+.transition-4{
+    transition: 0.4s;
+}
+
+/* Subir Página */
+.page-up{
+    position: fixed;
+    right: 28px;
+    bottom: 95.5px;
+    z-index: 1;
+
+    box-shadow: 0 3px 3px 0 rgba(0, 99, 177, 0.25);
+}
+
+.page-up img:hover{
+    transition: 0.4s;
+    filter: brightness(120%);
+}
+
+.page-up img{
+    position: relative;
+    bottom: -6px;
+    width: 48px;
+}
+
+.whatsapp{
+    position: fixed;
+    right: 30.5px;
+    bottom: 145px;
+    z-index: 1;
+}
+
+.whatsapp img{
+    width: 43px;
+}
+
+.whatsapp img:hover{
+    filter: brightness(115%);
+}
+
+/* Navbar */
+.navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    background-color: white;
+    z-index: 1;
+}
+
+.container-logo{
+    float: left;
+    margin: 22px 0 12px 30px;
+}
+
+.container-logo a{
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(81, 81, 81);
+}
+
+label[for='menu']{
+    float: right;
+    cursor: pointer;
+    margin: 25px 30px 0 0;
+    width: 22px;
+    height: 35px;
+    color: rgb(255, 255, 255);
+}
+
+label[for='menu']:hover{
+    filter: brightness(115%);
+}
+
+.menu{
+    float: left;
+}
+
+#menu{
+    display: none;
+}
+
+#menu:checked ~ .container-pages{
+    right: 0;
+    display: inline-block;
+}
+
+.container-pages{
+    position: relative;
+    right: -100%;
+    margin-top: 11px;
+    padding-top: 16px;
+    padding-bottom: 10px;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgb(0, 113, 201);
+    box-shadow: 0 3px 15px 0 rgba(50, 50, 50, 0.10);
+    z-index: 1;
+}
+
+.container-pages a:nth-of-type(5){
+    margin-bottom: 35px;
+}
+
+.page{
+    margin: 22px 0 13px 30px;
+    width: 0;
+    display: block;
+    text-align: left;
+}
+
+.adefault{
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(250, 250, 250);
+}
+
+.adefault:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+/* Header */
+.center{
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.header{
+    width: 100%;
+    height: auto;
+    box-shadow: 0 3px 15px 0 rgba(50, 50, 50, 0.10);
+}
+
+.x-mg{
+    margin-top: 55px;
+}
+
+.content-header{
+    padding-top: 45px;
+    width: 100%;
+    text-align: center;
+}
+
+.content-header h1{
+    margin: 0 auto;
+    width: 90%;
+    font-size: 40px;
+    color: rgb(81, 81, 81);
+}
+
+.content-header p{
+    margin: 15px auto;
+    width: 85%;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    color: rgb(91, 91, 91);
+}
+
+.btn-header{
+    margin: 40px 0 40px 0;
+    width: auto;
+    height: 30px;
+    text-align: center;
+}
+
+.btn-header-action{
+    padding: 12px 22px;
+    font: 18px 'Mulish', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.precise{
+    margin: 4px 0 0 -4px;
+    text-align: center;
+}
+
+.precise img{
+    margin: -3px 5px 0 0;
+}
+
+.precise span{
+    vertical-align: top;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: rgb(101, 101, 101);
+}
+
+.container-img{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.container-img img{
+    margin: 25px 0 50px 0;
+    width: 100%;
+    height: auto;
+}
+
+/* Section [Serviços] */
+.section{
+    margin-top: 70px;
+    width: 100%;
+}
+
+.content-section h1{
+    margin: 0 0 20px 0;
+    text-align: center;
+    font-size: 32px;
+    color: rgb(81, 81, 81);
+}
+
+.content-section .trace{
+    margin: 0 auto;
+    width: 40px;
+    height: 2px;
+    background-color: rgb(0, 113, 201);
+}
+
+.sub-section{
+    margin: 0 auto;
+    margin-top: 35px;
+    width: 90%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    color: rgb(91, 91, 91);
+}
+
+.container-service{
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.service{
+    margin: 0 auto;
+    padding: 50px 0;
+    width: 87%;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 15px 0 rgba(81, 81, 81, 0.08);
+}
+
+.service h2{
+    color: rgb(81, 81, 81);
+}
+
+.service p{
+    margin: 0 auto;
+    width: 85%;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 28px;
+    color: rgb(91, 91, 91);
+}
+
+.standard{
+    margin-top: 40px;
+}
+
+/* Section [Portfólio] */
+.container-project{
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.project{
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 87%;
+    background-color: rgb(76, 74, 72);
+}
+
+.project img{
+    width: 100%;
+    height: auto;
+    border-radius: 25px 25px 0 0;
+    background-color: rgb(0, 113, 201);
+}
+
+.project h3, .project p{
+    margin: 0;
+    color: rgb(250, 250, 250);
+}
+
+.project h3{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.project p{
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.btn-project{
+    margin: 35px auto;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 30px;
+}
+
+.btn-action{
+    padding: 12px 22px;
+    font: 16px 'Mulish', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.btn-style{
+    cursor: pointer;
+    background-color: rgb(0, 113, 201);
+    box-shadow: 0 3px 3px 0 rgba(0, 99, 177, 0.25);
+}
+
+.btn-style:hover{
+    transition: 0.30s;
+    filter: brightness(115%);
+}
+
+.btn-view{
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+}
+
+.btn-view-action{
+    padding: 10.5px 20.5px;
+    font: 18px 'Mulish', sans-serif;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    color: rgb(0, 113, 201);
+    border: 1.5px solid rgb(0, 113, 201);
+    box-shadow: 0 3px 3px 0 rgba(0, 99, 177, 0.25);
+}
+
+.btn-view-action:hover{
+    color: white;
+    background-color: rgb(0, 113, 201);
+    filter: brightness(115%);
+}
+
+.bottom-false{
+    padding: 1px; 
+}
+
+/* Section [Sobre] */
+.container-sobre{
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.sobre{
+    margin: 0 auto;
+    width: 90%;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+.sobre p{
+    color: rgb(91, 91, 91);
+}
+
+.rede-social{
+    margin-top: 50px;
+    width: 100%;
+}
+
+.perfil{
+    width: 100%;
+}
+
+.perfil img{
+    width: 50%;
+    border-radius: 50%;
+}
+
+.facebook, .instagram, .linkedin{
+    display: inline-block;
+    transition: transform .4s;
+}
+
+.facebook img, .instagram img, .linkedin img{
+    margin: 25px 20px 0 20px;
+    width: 30px;
+}
+
+.facebook:hover, .instagram:hover, .linkedin:hover{
+    filter: brightness(115%);
+    transform: scale(1.1);
+}
+
+/* Section [Contato] */
+.contato-cover h2{
+    width: 75%;
+}
+
+form{
+    margin-top: -10px;
+    text-align: center;
+}
+
+.label-float{
+    position: relative;
+}
+  
+.label-float input{
+    margin-top: 15px;
+    padding-left: 18px;
+    width: 75%;
+    height: 40px;
+    font: 16px 'Mulish', sans-serif;
+    color: rgb(81, 81, 81);
+    border: 1px solid rgb(151, 151, 151);
+    border-radius: 25px;
+}
+  
+.label-float label{
+    pointer-events: none;
+    position: absolute;
+    top: 5px;
+    left: 12.7%;
+    margin-top: 20.5px;
+    padding: 0 5px;
+    font: 16px 'Mulish', sans-serif;
+    color: rgb(151, 151, 151);
+    background-color: white;
+
+    transition: all 0.25s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label,
+.label-float textarea:focus + label, 
+.label-float textarea:not(:placeholder-shown) + label{
+    margin-top: 0;
+    font-size: 14px;
+    color: rgb(0, 113, 201);
+}
+
+.contato input[type="text"]:focus, 
+input[type="email"]:focus, 
+input[type="tel"]:focus, 
+.contato #message:focus{
+    border-radius: 0;
+    outline-color: rgb(0, 113, 201);
+}
+
+.contato #message{
+    margin-top: 15px;
+    padding: 10px 0 0 14px;
+    width: 75%;
+    height: 150px;
+    font: 16px 'Mulish', sans-serif;
+    color: rgb(81, 81, 81);
+    border: 1px solid rgb(151, 151, 151);
+    border-radius: 25px;
+}
+
+.btn-send{
+    cursor: pointer;
+    margin-top: 10px;
+    width: calc(75% + 15px);
+    height: 45px;
+    border: 0;
+    background-color: rgb(0, 113, 201);
+    box-shadow: 0 3px 3px 0 rgba(0, 99, 177, 0.25);
+}
+
+.btn-send:hover{
+    filter: brightness(115%);
+}
+
+button[type="submit"]{
+    font: 18px 'Mulish', sans-serif;
+    letter-spacing: 0.5px;
+    color: rgb(255, 255, 255);
+}
+
+.canais{
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 35px;
+    width: 90%;
+    font: 16px 'Mulish', sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+    color: rgb(81, 81, 81);
+}
+
+.canais p:last-child{
+    margin-bottom: 0;
+}
+
+.canais a{
+    text-decoration: none;
+    color: rgb(81, 81, 81);
+}
+
+.canais a:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(81, 81, 81);
+}
+
+/* Footer */
+.footer{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 -3px 15px 0 rgba(50, 50, 50, 0.10);
+}
+
+.facebook-footer, .instagram-footer, .linkedin-footer{
+    display: inline-block;
+    transition: transform .4s;
+}
+
+.facebook-footer img, .instagram-footer img, .linkedin-footer img{
+    margin: 20px 20px 0 20px;
+    width: 22px;
+}
+
+.facebook-footer:hover, .instagram-footer:hover, .linkedin-footer:hover{
+    filter: brightness(115%);
+    transform: scale(1.1);
+}
+
+.container-footer p{
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 85%;
+    font: 16px 'Mulish', sans-serif;
+    color: rgb(81, 81, 81);
+}
+
+/* sm Small devices (tablets, 768px and up) */
+@media screen and (min-width: 768px){
+    /* Header */
+    .content-header h1{
+        font-size: 48px;
+    }
+
+    .container-img{
+        margin: 0 auto;
+        width: 75%;
+    }
+
+    /* Section - Serviços */ 
+    .service{
+        margin: 0 20px 0 20px;
+        width: 40%;
+        vertical-align: top;
+        display: inline-block;
+    }
+    
+    .service p{
+        width: 90%;
+    }
+
+    .container-service div:nth-of-type(3){
+        margin-top: 50px;
+    }
+
+    .container-service div:nth-of-type(4){
+        margin-top: 50px;
+    }
+
+    .container-service div:nth-of-type(5){
+        margin-top: 50px;
+    }
+
+    .container-service div:nth-of-type(6){
+        margin-top: 50px;
+    }
+
+    .mg-servicemax798{
+        margin-top: 0;
+    }
+
+    .mg-min798{
+        margin-top: 30px;
+    }
+
+    /* Section [Portfólio] */
+    .project{
+        margin: 0 20px 40px 20px;
+        width: 40%;
+        display: inline-block;
+    }
+    
+    /* Section - Sobre */
+    .perfil img{
+        width: 40%;
+        border-radius: 50%;
+    }
+}
+
+/* md Medium devices (desktops, 992px and up) */
+@media screen and (min-width: 992px){
+    /* Subir Página // WhatsApp */
+    .page-up{
+        right: 30.5px;
+        bottom: 50.5px;
+    }
+
+    .whatsapp{
+        right: 32px;
+        bottom: 100px;
+    }
+    
+    /* Navbar */
+    .navbar{
+        height: 80px;
+    }
+
+    .container-logo{
+        margin: 24px 0;
+        margin-left: 60px;
+    }
+
+    label[for='menu']{
+        display: none;
+    }
+
+    .container-pages a:nth-of-type(6){
+        display: none;
+    }
+
+    .container-pages a:nth-of-type(5){
+        margin-bottom: 10px;
+    }
+
+    .container-pages{
+        float: right;
+        right: 0;
+        margin: 0 30px 0 0;
+        padding: 0;
+        width: auto;
+        height: 60px;
+        display: block;
+        background: none;
+        box-shadow: none;
+    }
+
+    .page{
+        margin: 11px 30px;
+        padding: 19px 0;
+        width: auto;
+        display: inline-block;
+        font-weight: normal;
+        text-align: right;
+        border-radius: 0;
+        background: none;
+        box-shadow: none;
+    }
+
+    .adefault{
+        font-size: 16px;
+        font-weight: 400;
+        text-decoration: none;
+        color: rgb(81, 81, 81);
+    }
+
+    .adefault:hover{
+        color: rgb(0, 113, 201);
+        text-decoration: none;
+        border-bottom: 2px solid rgb(0, 113, 201);
+        background: none;
+    }
+
+    /* Header */
+    .header{
+        height: 745px;
+    }
+    
+    .x-mg{
+        margin-top: 0;
+        padding-top: 60px;
+    }
+
+    .content-header{
+        margin: 15px 0 0 60px;
+        width: 43%;
+        display: inline-block;
+    }
+
+    .content-header h1{
+        margin: 0;
+        width: 470px;
+        text-align: left;
+    }
+    
+    .content-header p{
+        margin: 15px 0 0 0;
+        width: 450px;
+        text-align: left;
+    }
+
+    .btn-header{
+        margin: 40px 0 35px 0;
+        text-align: left;
+    }
+
+    .btn-header-action{
+        font: 16px 'Mulish', sans-serif;
+        letter-spacing: 0.5px;
+    }
+
+    .precise{
+        text-align: left;
+    }
+    
+    .container-img{
+        float: right;
+        margin-top: 60px;
+        margin-right: 35px;
+        width: 43%;
+        text-align: right;
+    }
+
+    /* Section [Serviços] */
+    .section{
+        margin-top: 80px;
+    }
+
+    .service{
+        width: 28%;
+        display: inline-block;
+    }
+    
+    .standard{
+        margin-top: 0;
+    }
+
+    .container-service div:nth-of-type(3){
+        margin-top: 0;
+    }
+
+    .container-service div:nth-of-type(4){
+        margin-top: 50px;
+    }
+
+    .container-service div:nth-of-type(5){
+        margin-top: 50px;
+    }
+
+    .container-service div:nth-of-type(6){
+        margin-top: 50px;
+    }
+
+    .mg-min798{
+        margin-top: 5px;
+    }
+
+    /* Section [Portfólio] */
+    .project{
+        margin: 0 25px 55px 25px;
+        width: 27.5%;
+        display: inline-block;
+    }
+
+    /* Section [Sobre] */
+    .container-sobre{
+        margin-top: 35px;
+    }
+
+    .sobre{
+        float: left;
+        margin-left: 80px;
+        width: 40%;
+        text-align: left;
+    }
+
+    .sobre p{
+        margin-bottom: 0;
+    }
+    
+    .rede-social{
+        float: right;
+        margin: 25px 80px 0 0;
+        width: 40%;
+        text-align: right;
+    }
+    
+    .perfil img{
+        width: 260px;
+    }
+
+    .facebook img, .instagram img, .linkedin img{
+        margin: 25px 28px 0 28px;
+        width: 30px;
+    }
+
+    /* Section [Contato] */
+    .contato-cover h2{
+        margin-bottom: 40px;
+    }
+
+    .label-float label{
+        left: 25.1%;
+    }
+
+    .contato input[type="text"], input[type="email"], input[type="tel"]{
+        width: 50%;
+    }
+            
+    .contato #message{
+        width: 50%;
+        height: 115px;
+    }
+            
+    .btn-send{
+        width: calc(50% + 15px);
+    }
+}
+
+/* lg Large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px){
+}
+
+/* xlg Extra large devices (extra large desktops, 1400px and up) */
+@media screen and (min-width: 1400px){
+    /* Header */
+    .content-header{
+        margin: 15px 0 0 60px;
+    }
+
+    .container-img{
+        margin-top: 65px;
+    }
+}
+
+/* xxlg Extra large devices (extra large desktops, 1800px and up) */
+@media screen and (min-width: 1800px){
+}

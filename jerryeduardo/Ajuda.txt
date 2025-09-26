@@ -1,0 +1,2 @@
+É suportado por definição apenas logotipos com altura máxima de 65px.
+Os campos de largura e altura precisam serem preenchidos com px (pixels) ou % (porcentagem) no final. Exemplo: 150px ou 100%.

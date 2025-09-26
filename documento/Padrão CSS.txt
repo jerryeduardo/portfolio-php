@@ -1,0 +1,8 @@
+.seletor {
+    [posicionamento]
+    [espaçamentos]
+    [tamanho]
+    [fonte e propriedades de texto]
+    [bordas]
+    [plano de fundo]
+}

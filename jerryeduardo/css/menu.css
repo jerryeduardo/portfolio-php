@@ -1,0 +1,40 @@
+/*  Global  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body, html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100%;
+}
+/*  End Global  */
+
+.menu{
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    background-color: #0071C9;
+}   
+.title{
+    padding: 50px 0 0 30px;
+    font-family: 'Mulish', sans-serif;
+    color: white;
+}
+.page{
+    margin-top: 20px;
+}
+.btn p{
+    margin: 5px 50% 0 0;
+    padding: 5px 20px;
+    border-radius: 25px;
+    background-color: white;
+    display: inline-block;
+}
+.link a{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}

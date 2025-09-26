@@ -1,0 +1,13 @@
+Mobile
+
+375 x var (L x A) - GRID de 3 Linhas (Left, Center e Right - Margem de 15px para as laterais)
+
+Desktop
+
+1600 x var (L x A) - GRID de 12 Colunas (12% - FF0000 - 10% / Center - 70 - 0 / 30)
+
+//
+
+Paleta
+Tipografia
+Botão
